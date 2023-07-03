@@ -15,10 +15,6 @@ burger.addEventListener('click', () => {
   }
 })
 
-navLink.addEventListener('click', () => {
-  if (navList2.classList.contains('open')) {
-    navList2.classList.remove('nav-list2')
-  } else {
-    navList2.classList.add('nav-list2')
-  }
-})
+// navLink.addEventListener('click', () => {
+//   navList2.classList.toggle('open')
+// })

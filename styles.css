@@ -6,7 +6,20 @@
     list-style: none;
 }
 
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: gray;
+}
+
 nav {
+    z-index: 10000001;
     background-color: rgba(22, 22, 22, 0.844);
     display: flex;
     justify-content: space-between;
@@ -94,13 +107,12 @@ nav ul li a:hover {
     justify-content: center;
     gap: 5%;
     align-items: center;
-    position: absolute;
-    top: 20%;
-    left: 8%;
+    padding: 20% 4% 0;
+    width: 50%;
 }
 
 header {
-    height: 70vh;
+    height: 100vh;
     width: 100%;
     background: linear-gradient(to right, #536976, #292e49);
 }
@@ -123,7 +135,189 @@ h4 {
     font-size: 20px;
 }
 
+h5 {
+    color: white;
+    font-size: 23px;
+    margin-bottom: 15px;
+}
+
+.button {
+    border: 2px solid transparent;
+    border-radius: 30px;
+    background-color: rgba(255, 0, 0, 0.826);
+    padding: 10px 25px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: larger;
+    transition: all .50s ease;
+}
+
+.button:hover {
+    background-color: transparent;
+    border: 2px solid rgba(220, 87, 87, 0.788);
+    cursor: pointer;
+}
+
+/* about aspect */
+#about {
+    height: auto;
+    padding: 100px;
+}
+
+.about {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    align-items: center;
+    padding: 50px 0;
+}
+
+.about-img img {
+    width: 350px;
+}
+
+.about-text {
+    width: 40%;
+}
+
+.about-text h2 {
+    font-size: 45px;
+    margin-bottom: 10px;
+}
+
+.about-text h5 {
+    letter-spacing: 1px;
+    font-size: 20px;
+    margin-bottom: 15px;
+    text-transform: capitalize;
+}
+
+.about-text p {
+    letter-spacing: 1px;
+    line-height: 15px;
+    font-size: 15px;
+    margin-bottom: 25px;
+}
+
+/* servies aspect  */
+
+#services {
+    /* background: #536976; */
+    background: linear-gradient(to right, #536976, #292e49);
+    width: 100%;
+    padding: 100px;
+}
+
+.services h2 {
+    color: white;
+    font-size: 70px;
+    width: 1130px;
+    margin: 30px auto;
+    text-align: center;
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 400px;
+}
+
+.card {
+    height: 430px;
+    width: 330px;
+    padding: 20px 35px;
+    background: #292e49;
+    border-radius: 20px;
+    margin: 15px;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+}
+
+.card i {
+    font-size: 50px;
+    display: block;
+    text-align: center;
+    margin: 25px 0px;
+    color: rgba(255, 0, 0, 0.826);
+}
+
+.para p {
+    color: white;
+    font-size: 16px;
+    line-height: 27px;
+    margin-bottom: 25px;
+}
+
+.services .readMoreBtn {
+    margin: 30px 45%;
+}
+
+
+@media(max-width: 1020px) {
+    .introduction {
+        padding: 35% 4% 0;
+    }
+
+    h1 {
+        margin: 10px 0 10px;
+        font-size: 45px;
+    }
+
+    h3 {
+        font-size: 20px;
+        margin-bottom: 30px;
+    }
+
+    h4 {
+        letter-spacing: 1px;
+        font-size: 15px;
+    }
+
+    #services {
+        padding: 50px 0;
+    }
+
+    .services h2 {
+        font-size: 45px;
+        width: 565px;
+        margin: 15px auto;
+    }
+
+    .box {
+        min-height: 200px;
+    }
+
+    .card {
+        height: 350px;
+        width: 200px;
+        padding: 10px 15px;
+    }
+
+    .card i {
+        font-size: 15px;
+        margin: 20px 0px;
+    }
+
+    h5 {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+
+    .para p {
+        font-size: 15px;
+        line-height: 20px;
+        margin-bottom: 15px;
+    }
+}
+
 @media(max-width: 920px) {
+    .introduction {
+        padding: 50% 4% 0;
+    }
+
     #nav-list {
         display: none;
     }
@@ -144,5 +338,58 @@ h4 {
 
     #burger.active .bar:nth-child(3) {
         transform: translateY(-8px) rotate(-45deg);
+    }
+
+    /* about aspect  */
+    #about {
+        padding: 50px;
+        height: auto;
+    }
+
+    .about {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        flex-direction: column;
+    }
+
+    .about img {
+        width: 250px;
+    }
+
+    .about-text {
+        width: 250px;
+    }
+}
+
+@media (max-width:650px) {
+    #about {
+        padding: 50px;
+        height: auto;
+    }
+
+
+
+    .about img {
+        width: 150px;
+    }
+
+    .about-text h2 {
+        font-size: 25px;
+        margin-bottom: 5px;
+    }
+
+    .about-text h5 {
+        font-size: 20px;
+        margin-bottom: 5px;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .about-text p {
+        letter-spacing: 1px;
+        line-height: 20px;
+        font-size: 15px;
+        margin-bottom: 25px;
     }
 }
