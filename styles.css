@@ -6,8 +6,143 @@
     list-style: none;
 }
 
+nav {
+    background-color: rgba(22, 22, 22, 0.844);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 4%;
+    position: fixed;
+    width: 100%;
+}
+
+#nav-list2 {
+    transition: all 3s ease-out;
+    width: 80%;
+    align-items: center;
+    justify-content: center;
+    margin: 0%;
+    position: absolute;
+    background-color: rgba(22, 22, 22, 0.844);
+    opacity: 85%;
+}
+
+.nav-list2 {
+    display: none;
+}
+
+nav ul li {
+    color: white;
+    display: inline-block;
+    padding: 10px 25px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: all .55s ease;
+}
+
+nav ul li a:hover {
+    color: rgba(255, 0, 0, 0.826);
+    border-bottom: 2px solid white;
+    transition: all .55s ease;
+    cursor: pointer;
+}
+
+.logo {
+    color: white;
+    font-size: xx-large;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+#burger {
+    z-index: 10;
+    cursor: pointer;
+    display: none;
+    transition: all .75s ease;
+}
+
+.bar {
+    background-color: white;
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px 0;
+    transition: all .3s ease;
+    z-index: 10002;
+}
+
+.open {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 15px;
+    position: absolute;
+    right: 8%;
+    top: 35px;
+    align-items: center;
+    transition: all 3s ease;
+    z-index: 1001;
+}
+
+.introduction {
+    display: flex;
+    justify-content: center;
+    gap: 5%;
+    align-items: center;
+    position: absolute;
+    top: 20%;
+    left: 8%;
+}
+
 header {
-    height: 100vh;
+    height: 70vh;
     width: 100%;
     background: linear-gradient(to right, #536976, #292e49);
+}
+
+h1 {
+    color: white;
+    margin: 20px 0 20px;
+    font-size: 70px;
+}
+
+h3 {
+    color: white;
+    font-size: 25px;
+    margin-bottom: 50px;
+}
+
+h4 {
+    color: rgba(220, 87, 87, 0.788);
+    letter-spacing: 2px;
+    font-size: 20px;
+}
+
+@media(max-width: 920px) {
+    #nav-list {
+        display: none;
+    }
+
+    #burger {
+        display: block;
+        z-index: 10002;
+    }
+
+    #burger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    #burger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+        transition: all .50s ease;
+    }
+
+    #burger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
 }
