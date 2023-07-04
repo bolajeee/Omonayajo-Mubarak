@@ -107,14 +107,14 @@ nav ul li a:hover {
     justify-content: center;
     gap: 5%;
     align-items: center;
-    padding: 20% 4% 0;
+    padding: 170px 0 0% 8%;
     width: 50%;
 }
 
 header {
     height: 100vh;
     width: 100%;
-    background: linear-gradient(to right, #536976, #292e49);
+    background: linear-gradient(180deg, rgba(2, 0, 36, 1) 0%, #3E5151 75%);
 }
 
 h1 {
@@ -161,6 +161,7 @@ h5 {
 
 /* about aspect */
 #about {
+    background: aliceblue;
     height: auto;
     padding: 100px;
 }
@@ -186,7 +187,7 @@ h5 {
     margin-bottom: 10px;
 }
 
-.about-text h5 {
+.about-text h4 {
     letter-spacing: 1px;
     font-size: 20px;
     margin-bottom: 15px;
@@ -204,7 +205,7 @@ h5 {
 
 #services {
     /* background: #536976; */
-    background: linear-gradient(to right, #536976, #292e49);
+    background: rgba(2, 0, 36, 1);
     width: 100%;
     padding: 100px;
 }
@@ -228,7 +229,7 @@ h5 {
     height: 430px;
     width: 330px;
     padding: 20px 35px;
-    background: #292e49;
+    background: #3E5151;
     border-radius: 20px;
     margin: 15px;
     position: relative;
@@ -252,14 +253,101 @@ h5 {
 }
 
 .services .readMoreBtn {
-    margin: 30px 45%;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+/* contact aspect */
+#contact {
+    background: aliceblue;
+}
+
+.contact {
+    padding: 50px 0;
+}
+
+.contact-dets {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    gap: 5%;
+    margin: 50px 0;
+}
+
+.contact-dets h2 {
+    margin: 10px 0 30px;
+}
+
+.contact .button {
+    margin-left: 10px;
+}
+
+.contact .D-needs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* footer aspect */
+footer {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    background: rgba(2, 0, 36, 1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+footer p:nth-child(1) {
+    font-size: 30px;
+    color: white;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+footer p:nth-child(2) {
+    color: white;
+    font-size: 18px;
+    width: 500px;
+    text-align: center;
+    line-height: 26px;
+}
+
+.social {
+    display: flex;
+}
+
+.social a {
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 0, 0, 0.826);
+    border-radius: 50%;
+    margin: 22px 10px;
+    color: white;
+    text-decoration: none;
+    font-size: larger;
+}
+
+.social a:hover {
+    transform: translateY(-5px);
+    transition: all .20s ease;
+}
+
+.end {
+    color: aliceblue;
+    margin-top: 100px;
+    font-size: 10px;
 }
 
 
 @media(max-width: 1020px) {
-    .introduction {
-        padding: 35% 4% 0;
-    }
+    /* header aspect  */
 
     h1 {
         margin: 10px 0 10px;
@@ -314,9 +402,9 @@ h5 {
 }
 
 @media(max-width: 920px) {
-    .introduction {
-        padding: 50% 4% 0;
-    }
+
+    /* header aspect  */
+
 
     #nav-list {
         display: none;
@@ -363,12 +451,12 @@ h5 {
 }
 
 @media (max-width:650px) {
+    /* about aspect  */
+
     #about {
         padding: 50px;
         height: auto;
     }
-
-
 
     .about img {
         width: 150px;
@@ -391,5 +479,12 @@ h5 {
         line-height: 20px;
         font-size: 15px;
         margin-bottom: 25px;
+    }
+
+    /* services aspect */
+    .services h2 {
+        font-size: 25px;
+        padding: 0%;
+        width: fit-content;
     }
 }
