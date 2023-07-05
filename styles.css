@@ -24,7 +24,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 30px 4%;
+    padding: 20px 4%;
     position: fixed;
     width: 100%;
 }
@@ -169,13 +169,14 @@ h5 {
 .about {
     display: flex;
     justify-content: center;
-    gap: 15px;
+    gap: 50px;
     align-items: center;
     padding: 50px 0;
 }
 
 .about-img img {
     width: 350px;
+    border-radius: 25px;
 }
 
 .about-text {
@@ -199,6 +200,10 @@ h5 {
     line-height: 15px;
     font-size: 15px;
     margin-bottom: 25px;
+}
+
+.talkBtn:hover {
+    color: crimson;
 }
 
 /* servies aspect  */
@@ -226,7 +231,7 @@ h5 {
 }
 
 .card {
-    height: 430px;
+    height: auto;
     width: 330px;
     padding: 20px 35px;
     background: #3E5151;
@@ -289,6 +294,10 @@ h5 {
     align-items: center;
 }
 
+.D-needs .button:hover {
+    color: crimson;
+}
+
 /* footer aspect */
 footer {
     position: relative;
@@ -345,6 +354,174 @@ footer p:nth-child(2) {
     font-size: 10px;
 }
 
+/* learn more page */
+.R-introduction {
+    padding: 150px 8%;
+}
+
+.page-name {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.page-name a {
+    color: white;
+    text-decoration: none;
+    list-style: none;
+}
+
+.page-name a:hover {
+    color: crimson;
+}
+
+.det {
+    border-bottom: 2px solid white;
+    color: crimson;
+}
+
+.R-introduction p {
+    font-size: 20px;
+    margin-bottom: 30px;
+    width: 500px;
+}
+
+#profile {
+    background-image: url(images/aboutImg.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+.profile img {
+    width: 35%;
+    position: relative;
+    left: 30%;
+    height: auto;
+    margin: 0;
+}
+
+.profile-text {
+    width: 70%;
+    left: 15%;
+    top: 170px;
+    position: relative;
+}
+
+.profile-text h2 {
+    color: white;
+    font-size: 45px;
+    padding-bottom: 15px;
+    display: flex;
+    justify-content: center;
+}
+
+.profile-text p {
+    color: white;
+    font-size: 20px;
+    line-height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    padding-bottom: 30px;
+}
+
+/* experience aspect*/
+
+.experience {
+    background: aliceblue;
+}
+
+.experience h2 {
+    color: rgba(2, 0, 36, 1);
+    font-size: 70px;
+    padding: 100px 0;
+    display: flex;
+    justify-content: center;
+    text-transform: uppercase;
+}
+
+.experience-row {
+    display: flex;
+    justify-content: center;
+    gap: 15%;
+    width: 80%;
+    margin-left: 10%;
+    padding: 50px 0;
+}
+
+.experience img {
+    width: 450px;
+    height: auto;
+}
+
+.experience-text {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: left;
+    width: 60%;
+}
+
+.experience-text h3 {
+    color: #292e49;
+    font-size: 45px;
+    padding-top: 30px;
+}
+
+.experience-text h5 {
+    color: #292e49;
+}
+
+.experience-text p {
+    color: rgba(22, 22, 22, 0.844);
+    font-size: 20px;
+    padding: 15px 0 30px;
+    line-height: 23px;
+}
+
+/* certification aspect  */
+
+#certification {
+    background: rgba(2, 0, 36, 1);
+    padding: 50px 0;
+}
+
+.certificates div {
+    display: flex;
+    justify-content: center;
+    padding: 15px 0;
+    align-items: center;
+}
+
+.certificates a {
+    text-decoration: none;
+    list-style: none;
+    font-size: 30px;
+    color: whitesmoke;
+}
+
+.certificates i {
+    font-size: 30px;
+    color: white;
+}
+
+.certificates h2 {
+    color: white;
+    font-size: 70px;
+    padding: 100px 0 50px;
+    display: flex;
+    justify-content: center;
+    text-transform: uppercase;
+}
+
+.learnMore .mail h3 {
+    color: #292e49;
+}
+
+.learnMore .mobile h3 {
+    color: #292e49;
+}
 
 @media(max-width: 1020px) {
     /* header aspect  */
@@ -398,6 +575,52 @@ footer p:nth-child(2) {
         font-size: 15px;
         line-height: 20px;
         margin-bottom: 15px;
+    }
+
+    /* footer aspect  */
+    .social a {
+        width: 25px;
+        height: 25px;
+        margin: 12px 5px;
+        font-size: larger;
+    }
+
+    /* learnMore page  */
+
+    .profile-text h2 {
+        font-size: 35px;
+    }
+
+    .experience h2 {
+        font-size: 45px;
+        padding: 100px 0 0;
+    }
+
+    .experience img {
+        display: none;
+    }
+
+    .experience-text {
+        align-items: center;
+        width: 80%;
+        align-content: center;
+        text-align: center;
+    }
+
+    .experience-text h3 {
+        font-size: 35px;
+    }
+
+    .certificates h2 {
+        font-size: 45px;
+    }
+
+    .certificates i {
+        font-size: 20px;
+    }
+
+    .certificates a {
+        font-size: 20px;
     }
 }
 
