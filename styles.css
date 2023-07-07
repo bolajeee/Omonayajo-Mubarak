@@ -386,25 +386,23 @@ footer p:nth-child(2) {
 }
 
 #profile {
-    background-image: url(images/aboutImg.jpeg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    height: 100vh;
+    background: #292e49;
+    height: auto;
 }
 
+
 .profile img {
-    width: 35%;
+    width: 60%;
     position: relative;
-    left: 30%;
+    left: 20%;
     height: auto;
     margin: 0;
 }
 
 .profile-text {
-    width: 70%;
-    left: 15%;
-    top: 170px;
+    width: 80%;
+    left: 10%;
+    padding: 50px 0;
     position: relative;
 }
 
