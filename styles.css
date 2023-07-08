@@ -478,6 +478,36 @@ footer p:nth-child(2) {
     line-height: 23px;
 }
 
+/* projects aspect */
+.projects {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    background: aliceblue;
+    padding: 50px 0;
+}
+
+.projects h2 {
+    color: rgba(2, 0, 36, 1);
+    font-size: 70px;
+    padding: 100px 0;
+    display: flex;
+    justify-content: center;
+    text-transform: uppercase;
+}
+
+.project-row h3 {
+    color: rgba(2, 0, 36, 1) !important;
+}
+
+.project-text {
+    margin: 50px 15% 30px;
+    width: 70%;
+    align-content: center;
+    text-align: center;
+}
+
 /* certification aspect  */
 
 #certification {
@@ -520,6 +550,8 @@ footer p:nth-child(2) {
 .learnMore .mobile h3 {
     color: #292e49;
 }
+
+
 
 @media(max-width: 1020px) {
     /* header aspect  */
@@ -608,6 +640,8 @@ footer p:nth-child(2) {
     .experience-text h3 {
         font-size: 35px;
     }
+
+    /* certificates aspect  */
 
     .certificates h2 {
         font-size: 45px;
