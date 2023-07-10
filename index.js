@@ -15,6 +15,24 @@ burger.addEventListener('click', () => {
   }
 })
 
-// navLink.addEventListener('click', () => {
-//   navList2.classList.toggle('open')
-// })
+const sr = ScrollReveal({
+  distance: '65px',
+  duration: 2600,
+  delay: 450,
+  reset: true
+})
+
+const sr2 = ScrollReveal({
+  distance: '85px',
+  duration: 2600,
+  delay: 450,
+  reset: true
+})
+
+sr.reveal('.social', { delay: 400, origin: 'bottom' })
+sr.reveal('nav', { delay: 300, origin: 'top' })
+
+sr2.reveal('.introduction', { delay: 200, origin: 'left' })
+sr2.reveal('.about', { delay: 300, origin: 'bottom' })
+sr2.reveal('.services', { delay: 300, origin: 'bottom' })
+sr2.reveal('.contact', { delay: 300, origin: 'bottom' })
