@@ -8,6 +8,7 @@
 
 ::-webkit-scrollbar {
     width: 5px;
+    height: auto;
 }
 
 ::-webkit-scrollbar-track {
@@ -238,8 +239,8 @@ h5 {
     border-radius: 20px;
     margin: 15px;
     position: relative;
-    overflow: hidden;
     text-align: center;
+    overflow: auto;
 }
 
 .card i {
@@ -250,9 +251,9 @@ h5 {
     color: rgba(255, 0, 0, 0.826);
 }
 
+
 .para p {
     color: white;
-    font-size: 16px;
     line-height: 27px;
     margin-bottom: 25px;
 }
@@ -400,8 +401,8 @@ footer p:nth-child(2) {
 }
 
 .profile-text {
-    width: 80%;
-    left: 10%;
+    width: 70%;
+    left: 15%;
     padding: 50px 0;
     position: relative;
 }
@@ -416,7 +417,7 @@ footer p:nth-child(2) {
 
 .profile-text p {
     color: white;
-    font-size: 35px;
+    font-size: 30px;
     line-height: 35px;
     display: flex;
     justify-content: center;
@@ -602,7 +603,6 @@ footer p:nth-child(2) {
     }
 
     .para p {
-        font-size: 15px;
         line-height: 20px;
         margin-bottom: 15px;
     }
